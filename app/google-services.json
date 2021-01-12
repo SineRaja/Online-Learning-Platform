@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "975824846398",
+    "firebase_url": "https://sha-academy.firebaseio.com",
+    "project_id": "sha-academy",
+    "storage_bucket": "sha-academy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975824846398:android:15ce3250c3aa0e1f7e1b6f",
+        "android_client_info": {
+          "package_name": "com.example.sha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975824846398-m80l6io0ourkglmck4uuuhffk7lunoc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5bSV92KF3JYww_4Fzw2Ox-g1BMxzbf7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975824846398-m80l6io0ourkglmck4uuuhffk7lunoc9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

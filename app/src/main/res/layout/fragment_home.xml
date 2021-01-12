@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".mainpage.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/cabin"
+                android:padding="8dp"
+                android:text="sign in"
+                android:textAllCaps="true"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="8dp">
+
+                <ViewFlipper
+                    android:id="@+id/v_flipper1"
+                    android:layout_width="match_parent"
+                    android:layout_height="149dp"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coding languages"
+                        android:textColor="#3C3D3B"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/muli_black"
+                        android:textSize="17sp"
+                        android:textAllCaps="true"/>
+
+                    <TextView
+                        android:id="@+id/coding_viewall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#3C3D3B"
+                        android:text="view all >"
+                        android:textStyle="bold"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp"
+                        android:textAllCaps="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/intership_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_margin="1dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Internship"
+                            android:textColor="#3C3D3B"
+                            android:fontFamily="@font/muli_black"
+                            android:textSize="17sp"
+                            android:textAllCaps="true"/>
+
+                        <TextView
+                            android:id="@+id/intern_viewAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="view all >"
+                            android:textColor="#3C3D3B"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/languages_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="275dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Web Development"
+                            android:layout_marginStart="8dp"
+                            android:textColor="#3C3D3B"
+                            android:fontFamily="@font/muli_black"
+                            android:textSize="17sp"
+                            android:textAllCaps="true"/>
+
+                        <TextView
+                            android:id="@+id/web_viewall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="view all >"
+                            android:textStyle="bold"
+                            android:textColor="#3C3D3B"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="15dp"
+                            android:textAllCaps="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/web_recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_margin="1dp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="all Development"
+                            android:fontFamily="@font/muli_black"
+                            android:textSize="17sp"
+                            android:textColor="#3C3D3B"
+                            android:textAllCaps="true"/>
+
+                        <TextView
+                            android:id="@+id/alldev_viewAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="view all >"
+                            android:textColor="#3C3D3B"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/categories_recycler"
+                        android:layout_height="300dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

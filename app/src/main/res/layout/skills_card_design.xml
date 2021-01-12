@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="259dp"
+    android:id="@+id/lang_cardView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12sp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="#ffffff"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:id="@+id/background_gradient"
+        android:layout_width="220dp"
+        android:layout_height="249dp"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/skill_image"
+            android:layout_width="207dp"
+            android:layout_height="138dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/skill_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/galdeano"
+            android:text="Restaurant"
+            android:textAllCaps="true"
+            android:textColor="#1D355E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/skill_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/andika"
+            android:text="Author"
+            android:textColor="#3C3D3B"
+            android:textSize="12sp" />
+
+        <RatingBar
+            android:id="@+id/skill_rate"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="3.5" />
+
+        <TextView
+            android:id="@+id/skill_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cabin"
+            android:text="Cost"
+            android:textColor="#162944"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
